@@ -1,5 +1,6 @@
 import random
 import json
+import argparse
 from kana2vowel import kana2vowel
 from pronounce import getPronunciation
 
@@ -118,6 +119,11 @@ class Naniyuki:
 
 
 def main():
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-v", "--verbose", help="increase output verbosity", action="store_true")
+    args = parser.parse_args()
+
     while True:
         keyword = input("\nkeyword?: ")
         if keyword == "":
@@ -125,11 +131,12 @@ def main():
         naniyuki = Naniyuki(keyword)
         print(f"{naniyuki.getNaniyuki()} 「それってあなたの{keyword}ですよね」")
 
-        # print("\ndebug information")
-        # print("Pronounce:      " + getPronunciation(keyword))
-        # print("K Based Random: " + str(naniyuki.getRandom("keyword")))
-        # print("P Based Random: " + str(naniyuki.getRandom("pronounce")))
-        # print("V Based Random: " + str(naniyuki.getRandom("vowel")))
+        if args.verbose:
+            print("\ndebug information")
+            print("Pronounce:      " + getPronunciation(keyword))
+            print("K Based Random: " + str(naniyuki.getRandom("keyword")))
+            print("P Based Random: " + str(naniyuki.getRandom("pronounce")))
+            print("V Based Random: " + str(naniyuki.getRandom("vowel")))
 
 
 if __name__ == "__main__":
