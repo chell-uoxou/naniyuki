@@ -8,7 +8,7 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install naniyuk
 pip install -r requirements.txt
 ```
 
-If you encountered some errors while installing` mecab-python3`, please read document: https://qiita.com/yukinoi/items/990b6933d9f21ba0fb43
+If you encountered some errors while installing `mecab-python3`, please read document: https://qiita.com/yukinoi/items/990b6933d9f21ba0fb43
 
 ## Usage
 
