@@ -1,5 +1,7 @@
 # naniyuki
 Generate your original hiroyuki
+<img width="1680" alt="8ddf6af6-e22e-40ff-954d-2cc1edfb25ca" src="https://user-images.githubusercontent.com/12378384/214694271-b559de5a-0ddd-4288-be61-60a070e8c684.png">
+
 
 ## Installation
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install naniyuki.
@@ -14,6 +16,48 @@ If you encountered some errors while installing `mecab-python3`, please read doc
 
 ```bash
 main.py [-h] [-v]
+```
+
+## Example
+```
+keyword?: 感想
+ひろゆき 「それってあなたの感想ですよね」
+
+keyword?: ハンバーグ
+ハンバーグひろゆき 「それってあなたのハンバーグですよね」
+
+keyword?: プリクラ
+プリクラ博之 「それってあなたのプリクラですよね」
+
+keyword?: 道草
+道草博之 「それってあなたの道草ですよね」
+
+keyword?: 餅
+餅ゆき 「それってあなたの餅ですよね」
+
+keyword?: 色
+ひ色ゆき 「それってあなたの色ですよね」
+
+keyword?:  南
+南村博之 「それってあなたの南ですよね」
+
+keyword?: はまぐり
+はまぐり 「それってあなたのはまぐりですよね」
+
+keyword?:  グミ
+ひろグミ 「それってあなたのグミですよね」
+
+keyword?: 雪
+ひろ雪 「それってあなたの雪ですよね」
+
+keyword?: 粉
+粉雪 「それってあなたの粉ですよね」
+
+keyword?: 恋
+僕の彼女というか妻というか細君というか奥さんというか 「それってあなたの恋ですよね」
+
+keyword?: メルティーキッス
+降る雪 「それってあなたのメルティーキッスですよね」
 ```
 
 
